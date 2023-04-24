@@ -11,7 +11,7 @@ export default function GenerateLink() {
   const [value, setValue] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   function previewLink(e) {
     isValidPhoneNumber(value)

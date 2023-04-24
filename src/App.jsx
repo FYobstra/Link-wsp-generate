@@ -7,13 +7,13 @@ function App() {
       icon: IconMessage,
       title: "Comunicación instantánea",
       subtitle:
-        "Permita que los clientes entren inmediatamente en un chat de WhatsApp con usted incluso sin su número",
+        "Permita que los clientes entren inmediatamente en un chat de WhatsApp contigo incluso sin su número",
     },
     {
       icon: IconMarketing,
       title: "Marketing eficaz en WhatsApp",
       subtitle:
-        "Convierta los enlaces de WhatsApp en parte de su estrategia de marketing de WhatsApp compartiéndolos en Facebook, Instagram y más",
+        "Convierte los enlaces de WhatsApp en parte de tu estrategia de marketing de WhatsApp compartiéndolos en Facebook, Instagram y más...",
     },
     {
       icon: IconContact,

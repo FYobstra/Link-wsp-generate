@@ -61,7 +61,7 @@ export default function Navbar() {
           <a
             onClick={() => {
               setIsOpen(false);
-              generateWsp.scrollIntoView({ behavior: "smooth" });
+              generateWsp.scrollIntoView(true,{ behavior: "smooth" });
             }}
             className="hidden lg:block dark:hover:text-white hover:text-gray-400 cursor-pointer"
           >

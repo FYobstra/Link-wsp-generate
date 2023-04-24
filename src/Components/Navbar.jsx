@@ -29,7 +29,7 @@ export default function Navbar() {
     },
   };
 
-  const generateWsp = document.getElementById('generateWsp')
+  const generateWsp = document.getElementById("generateWsp");
 
   return (
     <nav className="w-full sticky z-20">
@@ -59,17 +59,16 @@ export default function Navbar() {
         </div>
         <div className="text-primary-text-light dark:text-primary-text-dark text-sm flex items-center md:gap-10">
           <a
-            to={"/catalogue"}
             onClick={() => {
               setIsOpen(false);
-              generateWsp.scrollIntoView({ behavior: 'smooth' })
+              generateWsp.scrollIntoView({ behavior: "smooth" });
             }}
             className="hidden lg:block dark:hover:text-white hover:text-gray-400 cursor-pointer"
           >
             Generar Link
           </a>
           <a
-            to="https://github.com/FYobstra"
+            href="https://github.com/FYobstra"
             onClick={() => setIsOpen(false)}
             target="_blank"
             className="hidden lg:block dark:hover:text-white hover:text-gray-400 cursor-pointer"
@@ -97,16 +96,18 @@ export default function Navbar() {
             animate={{ width: "100%", opacity: 1 }}
             transition={{ duration: 0.3 }}
             exit="exit"
-            className="w-full top-0 z-10 bg-white-bg dark:bg-black-bg h-[100vh] text-xl overflow-hidden text-primary-text-light dark:text-primary-text-dark flex flex-col gap-10 text-center pt-24 px-6"
+            className="w-full top-0 z-10 bg-white-bg dark:bg-black-bg h-[100vh] text-xl overflow-hidden text-primary-text-light dark:text-primary-text-dark flex flex-col gap-10 text-center pt-12 px-6"
           >
-            <a to={"/"} onClick={() => setIsOpen(false)}>
-              Inicio
-            </a>
-            <a to={"/catalogue"} onClick={() => setIsOpen(false)}>
+            <a
+              onClick={() => {
+                setIsOpen(false);
+                generateWsp.scrollIntoView({ behavior: "smooth" }); 
+              }}
+            >
               Generar Link
             </a>
             <a
-              to="https://github.com/FYobstra"
+              href="https://github.com/FYobstra"
               onClick={() => setIsOpen(false)}
               target="_blank"
             >

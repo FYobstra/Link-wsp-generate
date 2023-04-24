@@ -12,7 +12,7 @@ export default function ModalLink({ isOpen, url, setIsOpen }) {
     <>
       <ToastContainer />
       {isOpen && (
-        <div className="w-full h-[100vh] flex justify-center items-center backdrop-blur-sm fixed top-0 left-0 right-0 bottom-0 z-40">
+        <div className="w-full h-[100vh] flex justify-center items-center backdrop-blur-sm bg-[#0000005c] fixed top-0 left-0 right-0 bottom-0 z-40">
           <div className="w-[90%] md:w-[35%] bg-white p-10 flex flex-col gap-5 justify-between items-start rounded-xl">
             <div className="w-full flex justify-end">
               <RxCross2
@@ -24,7 +24,7 @@ export default function ModalLink({ isOpen, url, setIsOpen }) {
               />
             </div>
             <h1 className="font-bold text-xl md:text-2xl lg:text-xl">
-              Tu link de WhatsApp esta listo!
+              Tu link de WhatsApp está listo!
             </h1>
             <div>
               <p>
@@ -47,7 +47,9 @@ export default function ModalLink({ isOpen, url, setIsOpen }) {
                 className="text-xl cursor-pointer"
               />
             </div>
-            <p>Ademas tienes tu propio codigo QR para pegarlo donde quieras!</p>
+            <p>
+              Además, tienes tu propio código QR para pegarlo donde prefieras!
+            </p>
             <img
               src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${url}`}
               alt=""

@@ -33,7 +33,7 @@ function App() {
         }
         title={"Generador de enlaces de WhatsApp"}
         subtitle={
-          "¿Quiere que sus clientes entablen una conver sación con usted en WhatsApp? Use el generador de enlaces WhatsApp de WsGen. Capture fácilmente los números de sus clientes cuando le envíen mensajes a través de su enlace de WhatsApp."
+          "Quieres que tus clientes te hablen por WhatsApp? Pues con el generador de enlaces WhatsApp de WsGen, es pan comido! Podrás capturar fácilmente sus números cuando te envíen mensajes a través de tu enlace de WhatsApp. No lo pienses más y haz que tu comunicación con ellos sea mucho más fácil!"
         }
       />
 

@@ -34,7 +34,7 @@ export default function GenerateLink() {
   }
 
   return (
-    <div className="w-full max-w-7xl mx-auto" id="generateWsp">
+    <div className="w-full max-w-7xl mx-auto">
       <ModalLink
         url={`https://api.whatsapp.com/send?phone=${value.replace("+", "")}${
           message !== "" ? "&text=" + encodeURI(message) : ""
@@ -42,11 +42,11 @@ export default function GenerateLink() {
         setIsOpen={setIsOpen}
         isOpen={isOpen}
       />
-      <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl dark:text-primary-text-dark text-primary-text-light text-center pb-10">
+      <h1 id="generateWsp" className="font-bold text-2xl md:text-3xl lg:text-4xl dark:text-primary-text-dark text-primary-text-light text-center pb-10">
         Crea tu link gratis aquí
       </h1>
       <div className="w-full flex flex-col gap-10 md:flex-row mx-auto justify-between items-center px-10">
-        <form className="w-full min-h-[450px] bg-gray-50 dark:bg-gray-800 max-w-lg flex flex-col gap-6 p-10 rounded-2xl shadow-sm lg:shadow-lg dark:shadow-slate-700">
+        <form className="w-full min-h-[450px] bg-gray-100 dark:bg-gray-800 max-w-lg flex flex-col gap-6 p-4 md:p-10 rounded-2xl shadow-sm lg:shadow-lg dark:shadow-slate-700">
           <div>
             <p className="dark:text-primary-text-dark text-primary-text-light pb-2">
               Escribe tu número de WhatsApp

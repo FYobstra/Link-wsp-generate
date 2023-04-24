@@ -101,7 +101,7 @@ export default function Navbar() {
             <a
               onClick={() => {
                 setIsOpen(false);
-                generateWsp.scrollIntoView({ behavior: "smooth" }); 
+                generateWsp.scrollIntoView(true,{ behavior: "smooth" }); 
               }}
             >
               Generar Link

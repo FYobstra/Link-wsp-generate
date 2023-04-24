@@ -29,8 +29,6 @@ export default function Navbar() {
     },
   };
 
-  const generateWsp = document.getElementById("generateWsp");
-
   return (
     <nav className="w-full sticky z-20">
       <div className="w-full flex justify-between items-center px-4 lg:px-10 py-4 shadow-md">
@@ -61,7 +59,8 @@ export default function Navbar() {
           <a
             onClick={() => {
               setIsOpen(false);
-              generateWsp.scrollIntoView(true,{ behavior: "smooth" });
+              const generateWsp = document.getElementById("generateWsp");
+              generateWsp.scrollIntoView({ behavior: "smooth" });
             }}
             className="hidden lg:block dark:hover:text-white hover:text-gray-400 cursor-pointer"
           >
@@ -99,10 +98,11 @@ export default function Navbar() {
             className="w-full top-0 z-10 bg-white-bg dark:bg-black-bg h-[100vh] text-xl overflow-hidden text-primary-text-light dark:text-primary-text-dark flex flex-col gap-10 text-center pt-12 px-6"
           >
             <a
-              onClick={() => {
-                setIsOpen(false);
-                generateWsp.scrollIntoView(true,{ behavior: "smooth" }); 
-              }}
+            onClick={() => {
+              setIsOpen(false);
+              const generateWsp = document.getElementById("generateWsp");
+              generateWsp.scrollIntoView({ behavior: "smooth" });
+            }}
             >
               Generar Link
             </a>

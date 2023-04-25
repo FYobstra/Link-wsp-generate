@@ -4,6 +4,8 @@ import { RxCross2 } from "react-icons/rx";
 import { saveAs } from "file-saver";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Confetti from "react-confetti";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ModalLink({ isOpen, url, setIsOpen }) {
   const notify = () => toast.success("Link copiado a portapapeles");
@@ -13,6 +15,11 @@ export default function ModalLink({ isOpen, url, setIsOpen }) {
       <ToastContainer />
       {isOpen && (
         <div className="w-full h-[100vh] flex justify-center items-center backdrop-blur-sm bg-[#0000005c] fixed top-0 left-0 right-0 bottom-0 z-40">
+            <Confetti
+              width={window.innerWidth}
+              height={window.innerHeight}
+              recycle={false}
+            />
           <div className="w-[90%] md:w-[35%] bg-white p-10 flex flex-col gap-5 justify-between items-start rounded-xl">
             <div className="w-full flex justify-end">
               <RxCross2

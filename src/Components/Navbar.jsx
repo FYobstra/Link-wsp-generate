@@ -47,7 +47,7 @@ export default function Navbar() {
           <a
             to={"/"}
             onClick={() => setIsOpen(false)}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 cursor-pointer"
           >
             <img src={Logo} alt="Logo search movies" className="w-8" />
             <h1 className="dark:text-primary-text-dark text-primary-text-light text-sm hidden sm:block lg:text-lg font-semibold">
